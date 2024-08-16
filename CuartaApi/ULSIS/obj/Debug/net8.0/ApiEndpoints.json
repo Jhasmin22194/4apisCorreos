@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "TodoApi.Controllers.AutenticacionController",
+    "Method": "Validar",
+    "RelativePath": "api/Autenticacion/Validar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TodoApi.Modelo.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TodoApi.Controllers.O_MAIL_OBJECTScontroller",
+    "Method": "Get",
+    "RelativePath": "api/O_MAIL_OBJECTS",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TodoApi.Modelo.M_O_MAIL_OBJECTS, TodoApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

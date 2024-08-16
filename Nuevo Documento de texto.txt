@@ -1,0 +1,35 @@
+--para piblicar desde windows y volverlo .dll
+dotnet publish --configuration Release
+
+--para moverlo de windows a centos
+scp -r <ruta_de_tu_directorio_publicado> <usuario>@<direccion_ip_del_servidor>:<ruta_destino_en_el_servidor>
+
+scp -r C:\Users\Correos\Desktop\TodoApi\TodoApi\bin\Release\net8.0\publish\ root@10.10.100.235:/usr/share/nginx/buscar
+--para saber las dependencias desde windows
+dotnet list package
+
+--para saber la ruta donde estas
+pwd
+
+--ruta del destino en el servidor
+/usr/share/nginx/Miapi
+
+/usr/share/nginx/Miapi/publish
+
+
+--ruta de mi publicacion en windows
+C:\Users\Correos\Desktop\TodoApi\TodoApi\bin\Release\net8.0\publish\
+
+--para abrir la configuracion principal de nginx:
+sudo nano /etc/nginx/nginx.conf
+
+El proyecto "TodoApi" tiene las referencias de paquete siguientes
+   [net8.0]:
+   Paquete de nivel superior                              Solicitado   Resuelto
+   > Microsoft.AspNetCore.Authentication.Certificate      8.0.3        8.0.3
+   > Microsoft.AspNetCore.Authentication.JwtBearer        8.0.3        8.0.3
+   > Microsoft.AspNetCore.Authorization                   8.0.2        8.0.2
+   > Microsoft.IdentityModel.Tokens                       7.4.0        7.4.0
+   > Swashbuckle.AspNetCore                               6.4.0        6.4.0
+   > System.Data.SqlClient                                4.8.6        4.8.6
+   > System.IdentityModel.Tokens.Jwt                      7.4.0        7.4.0
